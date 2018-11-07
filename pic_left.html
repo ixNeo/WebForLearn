@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pic {
+            /* margin-left: 150px; */
+        }
+
+        .thumbnail {
+            /* float: left; */
+        }
+
+        div {
+            float: left;
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            for(var i=0;i<10000;i++){
+                var ele = document.createElement("div");
+                switch(i%5){
+                    case 0: ele.style.backgroundColor="aqua"; break;
+                    case 1: ele.style.backgroundColor="black"; break; 
+                    case 2: ele.style.backgroundColor="blue"; break;
+                    case 3: ele.style.backgroundColor="purple"; break;
+                    case 4: ele.style.backgroundColor="green"; break;}
+
+                document.getElementsByTagName('body')[0].appendChild(ele);
+            }        
+        }
+    </script>
+</body>
+</html>
