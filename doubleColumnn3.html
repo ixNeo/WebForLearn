@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双栏布局</title>
+    <style>
+        /* 第二种方法：
+        * 两个div分别float: left/right;
+        * 一个width: calc(100%-200px); 
+         */
+
+         /* 共三种方法
+         * float+width(calc(100%-)
+         * position+left;
+         * flex */
+        html,
+        body,
+        main,
+        .column {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .column-1 {
+            float: left;
+            background-color: blue;
+            width: calc(100% - 200px);
+        }
+        .column-2 {
+            float: right;
+            background-color: aqua;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>右侧固定宽度，左侧自动变</header>
+    <main>
+        <div class="column column-1"><p>左侧</p></div>
+        <div class="column column-2"><p>右侧</p></div>        
+    </main>
+    </body>
+</html>

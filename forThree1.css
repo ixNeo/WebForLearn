@@ -1,0 +1,21 @@
+body,
+.column {
+    height:100%;
+}
+main {
+    display: flex;
+    height: 100%;
+}
+.left,
+.right {
+    height: 100%;
+    width: 200px;
+}
+
+.left {
+    background-color: aqua;
+}
+
+.right {
+    background-color: purple;
+}
