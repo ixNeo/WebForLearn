@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.keycode p,
+.key p {
+    color: rgb(184, 135, 43);
+}
+
+span {
+    color: brown;
+    text-decoration: underline;
+}
